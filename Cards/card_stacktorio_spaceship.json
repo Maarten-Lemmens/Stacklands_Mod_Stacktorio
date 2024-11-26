@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_spaceship",
+  "nameTerm": "card_stacktorio_spaceship_name",
+  "descriptionTerm": "card_stacktorio_spaceship_description",
+  "icon": "icon_stacktorio_spaceship.png",
+  "value": 10,
+  "script": "StacktorioModNS.Spaceship",
+  "type": "Structures",
+  "_IsBuilding" : true
+}

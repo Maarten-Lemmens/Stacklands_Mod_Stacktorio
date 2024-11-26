@@ -1,0 +1,16 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_resource_patch_coal",
+  "nameTerm": "card_stacktorio_resource_patch_coal_name",
+  "descriptionTerm": "card_stacktorio_resource_patch_coal_description",
+  "icon": "icon_stacktorio_resource_patch.png",
+  "script": "StacktorioModNS.ResourcePatch",
+  "type": "Structures",
+  "PushEnabled": false,
+  "_HasUniquePalette": true,
+  "_MyPalette": {
+    "Color": "#808080",
+    "Color2": "#fac08d",
+    "Icon": "#000000"
+  }
+}

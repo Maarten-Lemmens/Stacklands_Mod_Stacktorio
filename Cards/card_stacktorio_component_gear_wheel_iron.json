@@ -1,0 +1,18 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_component_gear_wheel_iron",
+  "nameTerm": "card_stacktorio_component_gear_wheel_iron_name",
+  "descriptionTerm": "card_stacktorio_component_gear_wheel_iron_description",
+  "icon": "icon_stacktorio_component_gear_wheel_iron.png",
+  "value": 1,
+  "script": "StacktorioModNS.Resources",
+  "type": "Resources"
+  //"PushEnabled": false,
+  //"_CanBeDragged": false
+  //"_HasUniquePalette": true,
+  //"_MyPalette": {
+    //"Color": "#000000",
+    //"Color2": "#e67621",
+    //"Icon": "#FFFFFF"
+  //}
+}

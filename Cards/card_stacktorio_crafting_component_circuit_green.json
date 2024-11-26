@@ -1,0 +1,16 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_crafting_component_circuit_green",
+  "nameTerm": "card_stacktorio_crafting_component_circuit_green_name",
+  "descriptionTerm": "card_stacktorio_crafting_component_circuit_green_description",
+  "icon": "icon_stacktorio_crafting_component_circuit.png",
+  "value": 1,
+  "script": "StacktorioModNS.Resources",
+  "type": "Resources",
+  "_HasUniquePalette": true,
+  "_MyPalette": {
+    "Color": "#228b22",
+    "Color2": "#fac08d",
+    "Icon": "#000000"
+  }
+}

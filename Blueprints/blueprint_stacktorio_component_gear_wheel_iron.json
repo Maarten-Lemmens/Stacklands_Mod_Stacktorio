@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "blueprint_stacktorio_component_gear_wheel_iron",
+    "nameTerm": "card_stacktorio_component_gear_wheel_iron_name",
+    "group": "Resources",
+    "script": "StacktorioModNS.BlueprintComponentGearWheelIron",
+    "needsExactMatch": false,
+    "subprints": [
+        {
+          "RequiredCards": "card_stacktorio_villager_engineer, card_stacktorio_material_plate_iron, card_stacktorio_material_plate_iron",
+          "ResultCard": "card_stacktorio_component_gear_wheel_iron",
+          "Time": 0.5,
+          "StatusTerm": "blueprint_stacktorio_component_gear_wheel_iron_status"
+        }
+    ]
+  }

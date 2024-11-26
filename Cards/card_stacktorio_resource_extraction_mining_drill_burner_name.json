@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_resource_extraction_mining_drill_burner",
+  "nameTerm": "card_stacktorio_resource_extraction_mining_drill_burner_name",
+  "descriptionTerm": "card_stacktorio_resource_extraction_mining_drill_burner_description",
+  "icon": "icon_stacktorio_resource_extraction_mining_drill_burner.png",
+  "value": 0,
+  "script": "StacktorioModNS.MiningDrillBurner",
+  "type": "Structures",
+  "_IsBuilding" : true
+}

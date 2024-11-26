@@ -1,0 +1,23 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "blueprint_stacktorio_inserters_inserter",
+    "nameTerm": "card_stacktorio_inserters_inserter_name",
+    "group": "Resources",
+    //"script": "StacktorioModNS.BlueprintPlates",
+    "needsExactMatch": false,
+    "subprints": [
+        {
+          "RequiredCards": "card_stacktorio_villager_engineer, card_stacktorio_crafting_component_circuit_green, card_stacktorio_component_gear_wheel_iron, card_stacktorio_material_plate_iron",
+          "ResultCard": "card_stacktorio_inserters_inserter",
+          "Time": 0.5,
+          "StatusTerm": "blueprint_stacktorio_inserters_inserter_status"
+        }
+        //,
+        //{
+          //"RequiredCards": "card_stacktorio_furnace_stone, card_stacktorio_ore_resource_copper",
+          //"ResultCard": "card_stacktorio_inserters_inserter",
+          //"Time": 0.3125,
+          //"StatusTerm": "blueprint_stacktorio_inserters_inserter_status"
+        //}
+    ]
+  }

@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "blueprint_stacktorio_production_lab",
+    "nameTerm": "card_stacktorio_production_lab_name",
+    "group": "Resources",
+    "script": "StacktorioModNS.BlueprintLab",
+    "needsExactMatch": false,
+    "subprints": [
+        {
+          "RequiredCards": "card_stacktorio_villager_engineer, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_crafting_component_circuit_green, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_belt_transport_belt_transport, card_stacktorio_belt_transport_belt_transport, card_stacktorio_belt_transport_belt_transport, card_stacktorio_belt_transport_belt_transport",
+          "ResultCard": "card_stacktorio_production_lab",
+          "Time": 2,
+          "StatusTerm": "blueprint_stacktorio_production_lab_status"
+        }
+    ]
+  }

@@ -1,0 +1,16 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_material_plate_copper",
+  "nameTerm": "card_stacktorio_material_plate_copper_name",
+  "descriptionTerm": "card_stacktorio_material_plate_copper_description",
+  "icon": "icon_stacktorio_material_plate_copper.png",
+  "value": 1,
+  "script": "StacktorioModNS.MaterialPlates",
+  "type": "Resources",
+  "_HasUniquePalette": true,
+  "_MyPalette": {
+    "Color": "#c86230",
+    "Color2": "#fac08d",
+    "Icon": "#000000"
+  }
+}

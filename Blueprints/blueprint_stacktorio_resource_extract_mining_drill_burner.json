@@ -1,0 +1,16 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "blueprint_stacktorio_resource_extraction_mining_drill_burner",
+    "nameTerm": "card_stacktorio_resource_extraction_mining_drill_burner_name",
+    "group": "Resources",
+    "script": "StacktorioModNS.BlueprintResourceExtractMiningDrillBurner",
+    "needsExactMatch": false,
+    "subprints": [
+        {
+          "RequiredCards": "card_stacktorio_villager_engineer, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_component_gear_wheel_iron, card_stacktorio_material_plate_iron, card_stacktorio_material_plate_iron, card_stacktorio_material_plate_iron, card_stacktorio_furnace_stone",
+          "ResultCard": "card_stacktorio_resource_extraction_mining_drill_burner",
+          "Time": 4,
+          "StatusTerm": "blueprint_stacktorio_resource_extraction_mining_drill_burner_status"
+        }
+    ]
+  }

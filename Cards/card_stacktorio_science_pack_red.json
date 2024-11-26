@@ -1,0 +1,16 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_science_pack_red",
+  "nameTerm": "card_stacktorio_science_pack_red_name",
+  "descriptionTerm": "card_stacktorio_science_pack_red_description",
+  "icon": "icon_stacktorio_science_pack.png",
+  "value": 1,
+  "script": "StacktorioModNS.Science",
+  "type": "Resources",
+  "_HasUniquePalette": true,
+  "_MyPalette": {
+    "Color": "#ffffff",
+    "Color2": "#ff0000",
+    "Icon": "#000000"
+  }
+}

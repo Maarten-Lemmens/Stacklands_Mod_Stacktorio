@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_production_lab",
+  "nameTerm": "card_stacktorio_production_lab_name",
+  "descriptionTerm": "card_stacktorio_production_lab_description",
+  "icon": "icon_stacktorio_production_lab.png",
+  "value": 0,
+  "script": "StacktorioModNS.Lab",
+  "type": "Structures",
+  "_IsBuilding" : true
+}

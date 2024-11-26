@@ -1,0 +1,22 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "blueprint_stacktorio_material_plate_copper",
+    "nameTerm": "card_stacktorio_material_plate_copper_name",
+    "group": "Resources",
+    "script": "StacktorioModNS.BlueprintPlates",
+    "needsExactMatch": false,
+    "subprints": [
+        {
+          "RequiredCards": "card_stacktorio_villager_engineer, card_stacktorio_ore_resource_copper",
+          "ResultCard": "card_stacktorio_material_plate_copper",
+          "Time": 3.2,
+          "StatusTerm": "blueprint_stacktorio_material_plate_copper_status"
+        },
+        {
+          "RequiredCards": "card_stacktorio_furnace_stone, card_stacktorio_ore_resource_copper",
+          //"ResultCard": "card_stacktorio_material_plate_copper",
+          "Time": 0.3125,
+          "StatusTerm": "blueprint_stacktorio_material_plate_copper_status"
+        }
+    ]
+  }

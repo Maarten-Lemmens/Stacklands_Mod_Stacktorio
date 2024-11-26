@@ -1,0 +1,86 @@
+Term	Notes	English
+card_stacktorio_spaceship_name		Spaceship
+card_stacktorio_spaceship_description		A giant metal pancake with rocket thrusters strapped on, designed by an engineer who definitely skipped the "aerodynamics" lecture.
+card_stacktorio_spaceship_status		Off we go... fingers crossed x_x
+card_stacktorio_drill_name		Drill
+card_stacktorio_drill_description		Burns fuel to mine the ore underneath
+card_stacktorio_resource_patch_iron_name		Iron Patch
+card_stacktorio_resource_patch_iron_description		Iron Ore is a basic resource found in resource patches throughout the world.
+card_stacktorio_resource_patch_coal_name		Coal Patch
+card_stacktorio_resource_patch_coal_description		Coal is a basic resource found in resource patches throughout the world.
+card_stacktorio_resource_patch_copper_name		Copper Patch
+card_stacktorio_resource_patch_copper_description		Copper Ore is a basic resource found in resource patches throughout the world.
+card_stacktorio_resource_patch_stone_name		Stone Patch
+card_stacktorio_resource_patch_stone_description		Stone is a basic resource found in resource patches throughout the world.
+card_stacktorio_ore_resource_iron_name		Iron Ore
+card_stacktorio_ore_resource_iron_description		Iron Ore is a resource found on the map. It can be smelted into iron plates in a furnace, and is also a component in concrete.
+card_stacktorio_ore_resource_coal_name		Coal
+card_stacktorio_ore_resource_coal_description		Coal is a resource found on the map. It is used as fuel in burner devices.
+card_stacktorio_ore_resource_copper_name		Copper Ore
+card_stacktorio_ore_resource_copper_description		Copper Ore is a basic resource found in resource patches throughout the world. It can be smelted into copper plates in a furnace.
+card_stacktorio_ore_resource_stone_name		Stone
+card_stacktorio_ore_resource_stone_description		Stone is a resource found on the map. 
+card_stacktorio_villager_engineer_name		Engineer
+card_stacktorio_villager_engineer_description		I'm the Engineer, stranded on this alien planet with nothing but my tools and wits. My mission? To build, automate, and survive.
+card_stacktorio_material_plate_iron_name		Iron Plate
+card_stacktorio_material_plate_iron_description		The Iron Plate is a material that can be made manually or by smelting iron ore in a furnace, or cast by a foundry. It is a component or subcomponent of almost every item in Factorio, and it is recommended to create a large stockpile when possible. When smelted in a furnace for a second time, iron plates will transform into steel plates, with a ratio of 5 iron plates per 1 steel plate.
+blueprint_stacktorio_material_plate_iron_status		Crafting Iron Plate
+card_stacktorio_material_plate_copper_name		Copper Plate
+card_stacktorio_material_plate_copper_description		The Copper Plate is a material that can be made manually or by smelting iron ore in a furnace, or cast by a foundry. It is a component or subcomponent of almost every item in Factorio, and it is recommended to create a large stockpile when possible.
+blueprint_stacktorio_material_plate_copper_status		Crafting Copper Plate
+card_stacktorio_component_gear_wheel_iron_name		Iron Gear Wheel
+card_stacktorio_component_gear_wheel_iron_description		The iron gear wheel is an intermediate product crafted from two iron plates, or cast by a foundry. It is very important for many basic and advanced recipes, including all levels of belts, the basic inserter and assembler, and raw resource extraction equipment such as the electric mining drill.
+blueprint_stacktorio_component_gear_wheel_iron_status		Crafting Iron Gear Wheel
+card_stacktorio_resource_extraction_mining_drill_burner_name		Burner Mining Drill
+card_stacktorio_resource_extraction_mining_drill_burner_description		The burner mining drill is the first type of drill accessible. It burns fuel to mine the ore underneath the Resource Patch it is placed on.
+blueprint_stacktorio_resource_extraction_mining_drill_burner_status		Crafting Burner Mining Drill
+stacktorio_resource_extraction_mining_drill_burner_status		Extracting Resources
+card_stacktorio_furnace_stone_name		Stone Furnace
+card_stacktorio_furnace_stone_description		The stone furnace is the most basic smelting machinery, providing a cheap and reliable source of basic products like iron plates and copper plates.
+blueprint_stacktorio_furnace_stone_status		Crafting Stone Furnace
+stacktorio_furnace_stone_status		Smelting
+card_stacktorio_science_pack_red_name		Red Science
+card_stacktorio_science_pack_red_description		Red Science is the first tier of science packs. It is used in labs to research technologies.
+blueprint_stacktorio_science_pack_red_status		Crafting Red Science
+card_stacktorio_science_pack_green_name		Green Science
+card_stacktorio_science_pack_green_description		Green Science is the second tier of science pack. It is used in labs to research technologies.
+blueprint_stacktorio_science_pack_green_status		Crafting Green Science
+card_stacktorio_science_pack_black_name		Black Science
+card_stacktorio_science_pack_black_description		Black Science is used for research that allows the player to advance their military strength through the entire game, unlocking more bullet choices, gun choices, turrets, etc. It is the only type of science pack that is optional, in that it is not required to launch a rocket.
+blueprint_stacktorio_science_pack_black_status		Crafting Black Science
+card_stacktorio_science_pack_blue_name		Blue Science
+card_stacktorio_science_pack_blue_description		Blue Science is the third tier of science pack. It is used in labs to research advanced technologies.
+blueprint_stacktorio_science_pack_blue_status		Crafting Blue Science
+card_stacktorio_science_pack_purple_name		Purple Science
+card_stacktorio_science_pack_purple_description		Purple Science is one of three late-game science packs, the other two being the Yellow Science, and the White Science.
+blueprint_stacktorio_science_pack_purple_status		Crafting Purple Science
+card_stacktorio_science_pack_yellow_name		Yellow Science
+card_stacktorio_science_pack_yellow_description		Yellow Science pack is one of three late-game science packs, the other two being the Blue Science, and the White Science.
+blueprint_stacktorio_science_pack_yellow_status		Crafting Yellow Science
+card_stacktorio_science_pack_white_name		White Science
+card_stacktorio_science_pack_white_description		White Science is an end-game science pack and is not directly craftable. Instead, it is obtained by launching a rocket from a rocket silo equipped with a satellite. 1000 White Science is delivered to the cargo landing pad each time a rocket with a satellite is launched. A cargo landing pad must be built somewhere on the map for a rocket to launch. White Science packs are used in all infinite technologies.
+blueprint_stacktorio_science_pack_white_status		Crafting White Science
+card_stacktorio_crafting_component_wire_copper_name		Copper Cable
+card_stacktorio_crafting_component_wire_copper_description		Copper cables are an intermediate product made from copper plates, or can be cast from a foundry. They are very important for manufacturing circuits and electrical connections.
+blueprint_stacktorio_crafting_component_wire_copper_status		Crafting Copper Cable
+card_stacktorio_crafting_component_circuit_green_name		Electronic Circuit
+card_stacktorio_crafting_component_circuit_green_description		The electronic circuit (or "green circuit") is a basic intermediate product, widely used throughout the game. The electronic circuit is the first in a line of circuit-type intermediate products.
+blueprint_stacktorio_crafting_component_circuit_green_status		Crafting Electronic Circuit
+card_stacktorio_belt_transport_belt_transport_name		Transport Belt
+card_stacktorio_belt_transport_belt_transport_description		The Transport Belt is the easiest and cheapest method of automatic item transportation. It is the first tier of transport belts.
+blueprint_stacktorio_belt_transport_belt_transport_status		Crafting Transport Belt
+card_stacktorio_production_lab_name		Lab
+card_stacktorio_production_lab_description		Labs are buildings that perform research for technologies by consuming science packs. Use of a lab is required to progress in Stactorio.
+blueprint_stacktorio_production_lab_status		Crafting Lab
+card_stacktorio_research_automation_name		Research: Automation
+card_stacktorio_research_automation_description		Automation is one of the first technologies that can be researched. It allows the building of the Long-handed inserter, as well as the Assembling machine, which is the start of automated crafting, an essential part of Stacktorio.
+card_stacktorio_research_automation_status		Researching: Automation
+card_stacktorio_inserters_inserter_name		Inserter
+card_stacktorio_inserters_inserter_description		The inserter can be used to transfer items between entities such as transport belts and stone furnaces. It is the most basic electric inserter.
+blueprint_stacktorio_inserters_inserter_status		Crafting Inserter
+card_stacktorio_inserters_inserter_long_handed_name		Long-handed Inserter
+card_stacktorio_inserters_inserter_long_handed_description		The Long-handed inserter is an electric inserter that picks up and places items two tiles from its location instead of the usual one. They are commonly used for placing items on a belt that is three tiles away from either an assembling machine or a furnace.
+blueprint_stacktorio_inserters_inserter_long_handed_status		Crafting Long-handed Inserter
+card_stacktorio_production_assembling_machine_1_name		Assembling machine 1
+card_stacktorio_production_assembling_machine_1_description		Assembling machine 1 is the most basic assembling machine. As Automation is the first technology available, this is the first available crafting machine. It is capable of crafting most recipes, including its own recipe. However, unlike higher tier assembling machines, it cannot use fluids for crafting.
+blueprint_stacktorio_production_assembling_machine_1_status		Crafting Assembling machine 1

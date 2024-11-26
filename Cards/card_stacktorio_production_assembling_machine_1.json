@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_production_assembling_machine_1",
+  "nameTerm": "card_stacktorio_production_assembling_machine_1_name",
+  "descriptionTerm": "card_stacktorio_production_assembling_machine_1_description",
+  "icon": "icon_stacktorio_production_assembling_machines.png",
+  "value": 0,
+  //"script": "StacktorioModNS.assembling_machine_1",
+  "type": "Structures",
+  "_IsBuilding" : true
+}

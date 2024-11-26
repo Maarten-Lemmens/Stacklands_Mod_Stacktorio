@@ -1,0 +1,10 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_material_plate_iron",
+  "nameTerm": "card_stacktorio_material_plate_iron_name",
+  "descriptionTerm": "card_stacktorio_material_plate_iron_description",
+  "icon": "icon_stacktorio_material_plate_iron.png",
+  "value": 1,
+  "script": "StacktorioModNS.MaterialPlates",
+  "type": "Resources"
+}

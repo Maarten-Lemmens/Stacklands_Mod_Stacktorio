@@ -1,0 +1,10 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_research_automation",
+  "nameTerm": "card_stacktorio_research_automation_name",
+  "descriptionTerm": "card_stacktorio_research_automation_description",
+  "icon": "icon_stacktorio_research_automation.png",
+  "value": -1,
+  "script": "StacktorioModNS.ResearchAutomation",
+  "type": "Locations"
+}

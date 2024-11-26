@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_furnace_stone",
+  "nameTerm": "card_stacktorio_furnace_stone_name",
+  "descriptionTerm": "card_stacktorio_furnace_stone_description",
+  "icon": "icon_stacktorio_furnace_stone.png",
+  "value": 0,
+  "script": "StacktorioModNS.FurnaceStone",
+  "type": "Structures",
+  "_IsBuilding" : true
+}

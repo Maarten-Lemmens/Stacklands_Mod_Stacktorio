@@ -1,0 +1,18 @@
+{
+  "$schema": "../schemas/card.schema.json",
+  "id": "card_stacktorio_villager_engineer",
+  "nameTerm": "card_stacktorio_villager_engineer_name",
+  "descriptionTerm": "card_stacktorio_villager_engineer_description",
+  "icon": "icon_stacktorio_villager_engineer.png",
+  "value": -1,
+  "script": "StacktorioModNS.Engineer",
+  "type": "Humans",
+  "_BaseCombatStats": {
+    "MaxHealth": 10,
+    "AttackDamage": 1,
+    "AttackSpeed": 1,
+    "Defence": 1,
+    "HitChance": 0.9,
+    "SpecialHits": []
+  }
+}
