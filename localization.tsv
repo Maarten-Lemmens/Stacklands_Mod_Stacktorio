@@ -77,6 +77,7 @@ card_stacktorio_research_automation_description		Automation is one of the first 
 card_stacktorio_research_automation_status		Researching: Automation
 card_stacktorio_inserters_inserter_name		Inserter
 card_stacktorio_inserters_inserter_description		The inserter can be used to transfer items between entities such as transport belts and stone furnaces. It is the most basic electric inserter.
+card_stacktorio_inserters_inserter_status		Inserting
 blueprint_stacktorio_inserters_inserter_status		Crafting Inserter
 card_stacktorio_inserters_inserter_long_handed_name		Long-handed Inserter
 card_stacktorio_inserters_inserter_long_handed_description		The Long-handed inserter is an electric inserter that picks up and places items two tiles from its location instead of the usual one. They are commonly used for placing items on a belt that is three tiles away from either an assembling machine or a furnace.

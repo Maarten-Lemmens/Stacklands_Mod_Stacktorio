@@ -5,7 +5,7 @@
   "descriptionTerm": "card_stacktorio_inserters_inserter_description",
   "icon": "icon_stacktorio_inserters.png",
   "value": 1,
-  //"script": "StacktorioModNS.Resources",
+  "script": "StacktorioModNS.Inserter",
   "type": "Structures",
   "_HasUniquePalette": true,
   "_MyPalette": {

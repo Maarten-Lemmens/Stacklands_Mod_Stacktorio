@@ -102,7 +102,7 @@ namespace StacktorioModNS
             else if (Id == "card_stacktorio_resource_patch_coal")
                 ResourceType = ResourceType.coal;
 
-            ResourceDepth = 200;
+            this.ResourceDepth = 50000;
             IsOn = true;
         }
         
@@ -160,6 +160,11 @@ namespace StacktorioModNS
 			return true;
 		}
 
+        public bool CanHaveCardOnTop(CardData otherCard, bool isPrefab = false)
+        {
+            return true;
+        }
+
         protected override bool CanHaveCard(CardData otherCard)
 		{
 			if (otherCard is MiningDrillBurner || otherCard.Id == "card_stacktorio_ore_resource_coal")
@@ -171,6 +176,8 @@ namespace StacktorioModNS
         
         public override void UpdateCard()
 		{
+            MyGameCard.CardData.Value = stackSizeIron + stackSizeCoal + stackSizeCopper + stackSizeStone;
+            
             GameCard rootParent = MyGameCard.GetRootCard();
             if (rootParent.CardData is ResourcePatch)
             {
@@ -254,6 +261,62 @@ namespace StacktorioModNS
             }
         }
 
+        /*
+        * Checks if an (ore)-card can be extracted from the Miner's inventory.
+        * If so then return an (ore)-card of with value Math.Min(hand-size of requester _versus_ internal stack size preesnt in  of miner's inventory)
+        */
+        public CardData RemoveResources(int count)
+        {
+            if (MyGameCard.CardData.Value > 0)
+            {
+                if (stackSizeCopper > 0)
+                {
+                    CardData removedOreCard = WorldManager.instance.CreateCard(base.transform.position, "card_stacktorio_ore_resource_copper", checkAddToStack: false);
+                    int removedOre = Mathf.Min(count, stackSizeCopper);
+
+                    //MyGameCard.CardData.Value -= removedOre;
+                    stackSizeCopper -= removedOre;
+                    removedOreCard.Value = removedOre;
+                    
+                    return removedOreCard;
+                }
+                else if (stackSizeIron > 0) 
+                {
+                    CardData removedOreCard = WorldManager.instance.CreateCard(base.transform.position, "card_stacktorio_ore_resource_iron", checkAddToStack: false);
+                    int removedOre = Mathf.Min(count, stackSizeIron);
+
+                    //MyGameCard.CardData.Value -= removedOre;
+                    stackSizeIron -= removedOre;
+                    removedOreCard.Value = removedOre;
+                    
+                    return removedOreCard;
+                }
+                else if (stackSizeStone > 0) 
+                {
+                    CardData removedOreCard = WorldManager.instance.CreateCard(base.transform.position, "card_stacktorio_ore_resource_stone", checkAddToStack: false);
+                    int removedOre = Mathf.Min(count, stackSizeStone);
+
+                    //MyGameCard.CardData.Value -= removedOre;
+                    stackSizeStone -= removedOre;
+                    removedOreCard.Value = removedOre;
+                    
+                    return removedOreCard;
+                }
+                else if (stackSizeCoal > 0)
+                {
+                    CardData removedOreCard = WorldManager.instance.CreateCard(base.transform.position, "card_stacktorio_ore_resource_coal", checkAddToStack: false);
+                    int removedOre = Mathf.Min(count, stackSizeCoal);
+
+                    //MyGameCard.CardData.Value -= removedOre;
+                    stackSizeCoal -= removedOre;
+                    removedOreCard.Value = removedOre;
+                    
+                    return removedOreCard;
+                }
+            }
+            return null;
+        }
+
         [TimedAction("mining_ore")]
         public void MiningOre()
         {
@@ -299,6 +362,10 @@ namespace StacktorioModNS
         public int stackSizeStoneBrick = 0;
         public int stackSizeSteelPlate = 0;
 
+        // coal, copper, iron, iron plate, stone, 
+        public string[] inputCardsAccepted = {"card_stacktorio_ore_resource_coal", "card_stacktorio_ore_resource_copper", "card_stacktorio_ore_resource_iron", "card_stacktorio_material_plate_iron", "card_stacktorio_ore_resource_stone"};
+        public int[] inputStackSizes = {0, 0, 0, 0, 0};
+
         // TODO: CHANGE from fuel/items --> to fuel/second
         public int fuelRemaining = 0; // 4 items per single unit of coal is used to fuel it, consumed 1 coal to put fuelRemaining to 7.
 
@@ -312,26 +379,11 @@ namespace StacktorioModNS
         // Accepts as input: iron ore, copper ore, stone, iron plates, coal (as fuel)
         protected override bool CanHaveCard(CardData otherCard)
 		{
-			if (otherCard.Id == "card_stacktorio_ore_resource_iron" ||
-                otherCard.Id == "card_stacktorio_ore_resource_copper" || 
-                otherCard.Id == "card_stacktorio_ore_resource_stone" || 
-                otherCard.Id == "card_stacktorio_material_plate_iron" ||
-                otherCard.Id == "card_stacktorio_ore_resource_coal")
-            {
-                return true;
-            }
-			return false;
+			return inputCardsAccepted.Contains(otherCard.Id);
 		}
         
         public override void UpdateCard()
 		{
-            
-            //if (fuelRemaining <= 0)
-              //  MyGameCard.CardData.IsOn = false;
-
-
-
-            
             if (MyGameCard.Child != null)
             {
                 if (fuelRemaining <= 0)
@@ -403,6 +455,18 @@ namespace StacktorioModNS
         {
             if (MyGameCard.CardData.Value > 0)
             {
+                for (int i = 0; i < inputStackSizes.Count(); i++)
+                {
+                    if (inputStackSizes[i] > 0)
+                    {
+                        CardData cardData = WorldManager.instance.CreateCard(base.transform.position, inputCardsAccepted[i], checkAddToStack: false);
+                        cardData.Value = inputStackSizes[i];
+                        WorldManager.instance.StackSendCheckTarget(MyGameCard, cardData.MyGameCard, OutputDir);
+                        inputStackSizes[i] = 0;
+                    }
+                }
+                
+                /*
                 if (stackSizeIronPlate > 0) {
                     CardData cardData = WorldManager.instance.CreateCard(base.transform.position, "card_stacktorio_material_plate_iron", checkAddToStack: false);
                     cardData.Value = stackSizeIronPlate;
@@ -429,9 +493,8 @@ namespace StacktorioModNS
                     stackSizeStone = 0;
                 }
                 */
-                
-                MyGameCard.CardData.Value = 0;
             }
+            MyGameCard.CardData.Value = 0;
         }
 
         [TimedAction("smelting_ore")]
@@ -855,4 +918,6 @@ namespace StacktorioModNS
             }
         }
     }
+
+    
 }
